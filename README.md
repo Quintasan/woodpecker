@@ -30,7 +30,7 @@ end
 ```
 
  * `config.api_key` - this is your API key and it's **required**, you can read about how to generate one [here](http://help.woodpecker.co/article/16-api-docs)
- * config.dummy_password - this is **optional** since Woodpecker's API doesn't really care what's here. It's "X" by default.
+ * `config.dummy_password` - this is **optional** since Woodpecker's API doesn't really care what's here. It's "X" by default.
 
 These keys are available during runtime as:
 
