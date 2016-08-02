@@ -38,12 +38,12 @@ module Woodpecker
   def self.add_prospects_campaign(campaign_id, params = {}, prospects)
     payload = { campaign: { campaign_id: campaign_id },
                 update: 'true',
-                prospects: prospects }.to_json
+                prospects: Array(prospects) }.to_json
     Woodpecker::Utils::Request.post('add_prospects_campaign', params, payload)
   end
 
   def self.add_prospects_list(params = {}, prospects)
-    payload = { update: 'true', prospects: prospects }.to_json
+    payload = { update: 'true', prospects: Array(prospects) }.to_json
     Woodpecker::Utils::Request.post('add_prospects_list', params, payload)
   end
 
