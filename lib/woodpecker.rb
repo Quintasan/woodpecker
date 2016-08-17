@@ -12,8 +12,6 @@ require 'woodpecker/campaign'
 require 'woodpecker/prospect'
 require 'woodpecker/errors/prospect'
 
-require 'pry'
-
 module Woodpecker
   class << self
     attr_accessor :configuration
