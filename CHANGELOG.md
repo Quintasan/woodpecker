@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.2 (2016-08-17)
+
+### Changes
+
+* Remove `require "pry"` from `lib/woodpecker.rb`. I should be kicked for that.
+
 ## 0.1.1 (2016-08-02)
 
 ### Changes
