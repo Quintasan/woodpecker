@@ -1,26 +1,6 @@
+inherit_from:
+- https://relaxed.ruby.style/rubocop.yml
+
 AllCops:
   DisplayCopNames: true
-  TargetRubyVersion: 2.3
-
-Metrics/AbcSize:
-  Enabled: false
-
-Metrics/CyclomaticComplexity:
-  Enabled: false
-
-Metrics/PerceivedComplexity:
-  Enabled: false
-
-Metrics/LineLength:
-  AllowURI: true
-  Enabled: false
-
-Metrics/MethodLength:
-  CountComments: false
-  Max: 20
-
-Style/Documentation:
-  Enabled: false
-
-Style/FrozenStringLiteralComment:
-  Enabled: false
+  TargetRubyVersion: 2.5
