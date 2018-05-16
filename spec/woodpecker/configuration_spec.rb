@@ -1,4 +1,6 @@
-require_relative '../spec_helper.rb'
+# frozen_string_literal: true
+
+require 'spec_helper'
 
 describe Woodpecker::Configuration do
   before do

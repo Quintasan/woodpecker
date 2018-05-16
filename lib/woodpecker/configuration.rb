@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Woodpecker
   class Configuration
     # Woodpecker API uses HTTP Basic Authentication where the token is the

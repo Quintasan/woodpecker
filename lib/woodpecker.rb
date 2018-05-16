@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'json'
 require 'typhoeus'
 
@@ -13,10 +15,6 @@ require 'woodpecker/prospect'
 require 'woodpecker/errors/prospect'
 
 module Woodpecker
-  class << self
-    attr_accessor :configuration
-  end
-
   def self.configuration
     @configuration ||= Configuration.new
   end

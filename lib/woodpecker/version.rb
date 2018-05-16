@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Woodpecker
   module Version
     module_function

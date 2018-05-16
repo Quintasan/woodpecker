@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 module Woodpecker
   class Prospect
     VALID_STATUSES = %w(active replied bounced autoreplied invalid blacklist).freeze
-    ATTRS = [:email, :status, :first_name, :last_name, :tags, :company,
-             :industry, :title, :phone, :address, :city, :state, :country, :website,
-             :snipet1, :snipet2, :snipet3, :snipet4].freeze
+    ATTRS = %i[email status first_name last_name tags company
+               industry title phone address city state country website
+               snipet1 snipet2 snipet3 snipet4].freeze
 
     attr_accessor(*ATTRS)
 

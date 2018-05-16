@@ -1,5 +1,7 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'woodpecker/version'
 
@@ -8,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.version       = Woodpecker::Version
   spec.authors       = ['Michał Zając']
   spec.summary       = 'Simple Woodpecker API client'
-  spec.description   = 'Simple API client for Woodpecker. Woodpecker is a service to send personalized cold emails & follow-ups to your users. '
+  spec.description   = 'Simple API client for Woodpecker. Woodpecker is a service to send personalized cold emails & follow-ups to your users.'
   spec.homepage      = 'https://github.com/Quintasan/woodpecker'
   spec.license       = 'MIT'
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
