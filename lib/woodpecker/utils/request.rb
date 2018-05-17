@@ -15,6 +15,7 @@ module Woodpecker
 
       def post(endpoint, params = {}, body = {})
         request = Typhoeus::Request.post("https://api.woodpecker.co/rest/v1/#{endpoint}",
+                                         headers: { "Content-Type": "application/json" },
                                          userpwd: "#{Woodpecker.configuration.api_key}:#{Woodpecker.configuration.dummy_password}",
                                          params: params,
                                          body: body)
