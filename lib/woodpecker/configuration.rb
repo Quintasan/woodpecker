@@ -17,8 +17,7 @@ module Woodpecker
     end
 
     def dummy_password
-      raise Errors::Configuration, 'Dummy password is missing!' unless @dummy_password
-      @dummy_password
+      @dummy_password ||= "X"
     end
   end
 end
