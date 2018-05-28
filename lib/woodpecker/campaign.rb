@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'time'
+
 module Woodpecker
   class Campaign
     attr_accessor :id, :name, :status, :from_name, :from_email, :created
@@ -10,7 +12,7 @@ module Woodpecker
       @status = campaign[:status]
       @from_name = campaign[:from_name]
       @from_email = campaign[:from_email]
-      @created = Time.iso8601(campaign[:created])
+      @created = Time.parse(campaign[:created])
     end
   end
 end
