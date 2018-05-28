@@ -13,7 +13,7 @@ module Woodpecker
     end
 
     def patch
-      3
+      4
     end
 
     def to_a
